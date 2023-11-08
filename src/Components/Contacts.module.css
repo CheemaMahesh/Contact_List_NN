@@ -1,0 +1,106 @@
+.empty {
+  height: 15vh;
+  width: 98.9vw;
+}
+
+.albumContainer {
+  height: 100vh;
+  width: 100%; /* Change width to 100% for full width */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.album {
+  width: 30%;
+  min-height: 30vh; /* Set a minimum height to maintain consistency */
+  margin: 10px; /* Add some margin between albums */
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titles {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0; /* Add some margin to the title */
+}
+
+.ids {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-around;
+  font-weight: bold;
+  width: 100%;
+  color: #333;
+}
+
+.btns {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns button {
+  height: 5vh;
+  width: 6vw;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: cursive;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+}
+
+.update:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.delete {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+}
+
+.delete:hover {
+  background-color: #d32f2f; /* Darker Red */
+}
+
+.h5s {
+  font-size: 0.7rem;
+  color: coral;
+}
+
+.formPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+}

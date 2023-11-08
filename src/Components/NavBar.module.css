@@ -1,0 +1,93 @@
+/* NavBar.module.css */
+.Nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+height: 10vh;
+width: 98.9vw;
+  }
+  
+  .PageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c5de9f;
+    
+  }
+  
+  .addForm {
+    position: relative;
+    /* margin-right: -20vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+  }
+  
+  .addForm h1 {
+    cursor: pointer;
+    background-color: #333;
+    border: 1px solid #635e5e;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .addForm form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #23de0a;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .addForm.visible form {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .titleInp,
+  .AlbumId,
+  .submit {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    width: 10vw;
+  }
+  
+  .submit {
+    background-color: #98be5c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 10vw;
+
+  }
+  
+  .submit:hover {
+    background-color: #1bbc0c;
+    width: 10vw;
+  }
+  .formss{
+    background-color: #23de0a;
+  }
+  .hhhh{
+    background-color: #1bbc0c;
+    font-family: cursive;
+    height:5vh;
+    width: 20vh;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .hhhh:hover{
+    background-color: #23f407;
+  }
